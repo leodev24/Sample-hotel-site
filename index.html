@@ -26,11 +26,17 @@
         background-color: black;
         height: 45px;
         margin: 0px;
-        /* width: 100%; */
+        position: fixed;
+        top: 0px;
+        width: 97.9%;
+       z-index: 999;
     }
-    .nav{
-        width: 100vw;
-        height: 100vh;
+
+    #nav {
+        
+        position: fixed;
+        top: 0px;
+        z-index: 999;
     }
 
     li {
@@ -62,7 +68,7 @@
 
     }
 
-    .nav {
+    #nav {
         position: sticky;
     }
 
@@ -229,7 +235,7 @@
 
     .cards {
         position: absolute;
-        bottom: -1001px;
+        bottom: -961px;
         display: flex;
         /* justify-content: space-evenly; */
         background-color: brown;
@@ -275,7 +281,7 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 1738px;
+        top: 1696px;
     }
 
     .phreview {
@@ -338,7 +344,7 @@
     }
 
     .par {
-        top: 1740px;
+        top: 1698px;
         position: absolute;
         display: block;
         width: 1500px;
@@ -430,7 +436,7 @@
         position: relative;
         bottom: -1777px;
         width: 99vw;
-        height: 100vp;
+        height: 501px;
         background-color: #26272b;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -454,9 +460,9 @@
     }
 
     .icon {
-        width: 100px;
-        height: 100px;
-        padding: 10px;
+        width: 50px;
+        height: 50px;
+        padding: 49px;
 
     }
 
@@ -467,9 +473,16 @@
     }
 
     .icons {
-        margin-top: 57px;
+        margin-top: 0px;
+        display: flex;
+        
     }
-    #l{
+    .icons-1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #l {
         width: 40px;
         height: 40px;
     }
@@ -482,17 +495,18 @@
             <div id="nav">
                 <ul class="navbar">
                     <li id="logo"><img src="download.png" alt=""></li>
-                    <li><a href="#">Intro Section</a></li>
-                    <li><a href="#">Specialties Section.</a></li>
-                    <li><a href="#">Our Recommendations Section</a></li>
-                    <li><a href="#">Reviews Section</a></li>
-                    <li><a href="#">Footer</a></li>
+                    <li><a href="#introl">Intro Section</a></li>
+                    <li><a href="#spec">Specialties Section.</a></li>
+                    <li><a href="#recoml">Our Recommendations Section</a></li>
+                    <li><a href="#revl">Reviews Section</a></li>
+                    <li><a href="#footl">Footer</a></li>
                 </ul>
             </div>
         </nav>
     </section>
 
     <section class="intropage">
+        <a id="introl"></a>
         <div class="intro">
             <div class="coverpage">
                 <p id="subtitle">On The Dime Dining</p>
@@ -510,6 +524,7 @@
 
 
     <section class="specialist">
+        <a id="spec"></a>
         <div id="heading">
             <h1>Specialist-Section</h1>
         </div>
@@ -581,6 +596,7 @@
 
     </section>
     <section>
+        <a id="recoml"></a>
         <div class="recommended">
 
             <div class="navbar-1">
@@ -650,8 +666,9 @@
         <p id="parp">Reviews-Section</p>
     </div>
     <section>
-        <div class="review">
 
+        <div class="review">
+            <a id="revl"></a>
             <div class="phreview">
                 <div class="card-3">
                     <img src="nora.jfif" alt="Avatar" class="phr">
@@ -772,8 +789,10 @@
         </div>
 
     </section>
+
     <footer>
         <div class="end">
+            <a id="footl"></a>
             <div class="f1">
                 <div class="imgcon">
 
@@ -781,7 +800,7 @@
 
                 </div>
 
-                <div class="icons">
+                <div class="icons-1">
                     <a href="#">
                         <img src="terms.jfif" alt="" class="icon">
                     </a>
